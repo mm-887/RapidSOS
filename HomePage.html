@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <h1> Stay Safe, </h1>
+        <h2> Help is just one click away</h2>
+        <div class="Emergency-box" onclick="startEmergencyMode()">
+            <p class="Emergency"> Emergency Mode  <i class="ri-gps-fill emergency-icon"></i></p>
+            <p class="Message">Send instant SOS with location</p>
+        </div>
+    </div>
+    
+    
+    <div id="emergencyOverlay" class="overlay hidden">
+       <div class="overlay-card">
+          <h2> Emergency Mode Activated</h2>
+          <p>SOS will be sent in</p>
+          <div id="countdown" class="count">5</div>
+          <button id="cancelSOS" class="cancel-btn">Cancel Emergency</button>
+        </div>
+    </div>
+
+
+    <h3>Quick Options...</h3>
+    <div class="content">
+        <div class="lightgray"> <span class="icon1"><i class="ri-add-circle-line"></i></span><a href="Add Contacts.html"> Add contact</a> </div>
+        <div class="pink"> <span class="icon2"> <i class="ri-contacts-book-3-line"></i></span><a href="Contacts.html">Contacts</a></div>
+        <div class="yellow"><span class="icon3"><i class="ri-phone-fill"></i></span><a href="Emergency Helpline.html">Helpline</a></div>
+        <div class="lightgreen"><span class="icon4"><i class="ri-edit-line"></i></span><a href="Emergency Alert Setup.html">Edit Message</a></div>
+    </div>
+    <script src="HomePage.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Alert Setup | SOS App</title>
+
+  <link rel="stylesheet" href="Emergency Alert Setup.css" />
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar">
+      <h3><a href="HomePage.html">Home</a></h3>
+      <h3 class="app-title">Emergency SOS</h3>
+      <h3><a href="Contacts.html">Contacts</a></h3>
+    </nav>
+  </header>
+
+  <main>
+    <div class="emergency-setup">
+      <h2>Prepare your SOS in advance</h2>
+      <p>Configure emergency types and messages before you need them</p>
+    </div>
+
+    <div class="container">
+      <h1>Emergency Profile</h1>
+      <p class="subtitle">Choose the type of emergency to send a quick SOS</p>
+      <div class="emergency-cards">
+        <div class="card" data-type="medical"><span>Medical</span></div>
+        <div class="card" data-type="accident"><span>Accident</span></div>
+        <div class="card" data-type="fire"><span>Fire</span></div>
+        <div class="card" data-type="threat"><span>Personal Threat</span></div>
+        <div class="card" data-type="custom"><span>Other</span></div>
+      </div>
+      <input type="text" id="customType" placeholder="Enter custom emergency type" class="hidden">
+      <label for="emergency-text">Emergency Message</label>
+      <textarea id="emergency-text" rows="5"></textarea>
+    </div>
+  </main>
+  <script src="Emergency Alert Setup.js"> </script>
+</body>
+</html>
