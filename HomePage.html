@@ -11,23 +11,17 @@
     <div class="header">
         <h1> Stay Safe, </h1>
         <h2> Help is just one click away</h2>
-        <div class="Emergency-box" onclick="startEmergencyMode()">
+        <div class="Emergency-box" onclick="goToEmergencySetup()">
             <p class="Emergency"> Emergency Mode  <i class="ri-gps-fill emergency-icon"></i></p>
             <p class="Message">Send instant SOS with location</p>
         </div>
+        <script>
+          function goToEmergencySetup() {
+          window.location.href = "Emergency Alert Setup.html";
+         }
+        </script>
     </div>
     
-    
-    <div id="emergencyOverlay" class="overlay hidden">
-       <div class="overlay-card">
-          <h2> Emergency Mode Activated</h2>
-          <p>SOS will be sent in</p>
-          <div id="countdown" class="count">5</div>
-          <button id="cancelSOS" class="cancel-btn">Cancel Emergency</button>
-        </div>
-    </div>
-
-
     <h3>Quick Options...</h3>
     <div class="content">
         <div class="lightgray"> <span class="icon1"><i class="ri-add-circle-line"></i></span><a href="Add Contacts.html"> Add contact</a> </div>
