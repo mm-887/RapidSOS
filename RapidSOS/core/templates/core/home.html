@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="icon" type="sos/jpeg" href="{% static 'sos.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <h1 class="stay-safe">Stay Safe,<br> <span class="text">Help is just one click away</span></h1>
+            <h1 class="rapid-sos"></h1>
+        </div>
+        <div class="Emergency-box" onclick="goToEmergencySetup()">
+            <p class="Emergency"> Emergency Mode  <i class="ri-gps-fill emergency-icon"></i></p>
+            <p class="Message">Send instant SOS with location</p>
+        </div>
+        <script>
+          function goToEmergencySetup() {
+            window.location.href = "{% url 'alert_setup' %}";
+          }
+        </script>
+    </div>
+
+    <section class = "how-sos-works">
+        <h2> How SOS works</h2>
+        <p class = "how-subtitle"> Know what happens when you activate Emergency mode </p>
+
+        <div class = "steps-container">
+            <div class = "step">
+                <div class = "step-icon">🚨</div>
+                <h3> 1.Activate SOS </h3>
+                <p> Tap or hold the Emergency mode button </p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">📝</div>
+                <h3> 2.Select Emergency </h3>
+                <p> Choose the type of emergency</p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">⌛</div>
+                <h3> 3.Countdown </h3>
+                <p> 5s timer starts before sending SOS </p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">📍</div>
+                <h3> 4.SOS sent </h3>
+                <p> Message and live location sent to contacts </p>
+            </div>
+        </div>
+    </section>
+
+    <h3>Quick Options...</h3>
+    <div class="content">
+        <div class="lightgray"> <span class="icon1"><i class="ri-add-circle-line"></i></span><a href="{% url 'add_contact' %}"> Add contact</a> </div>
+        <div class="pink"> <span class="icon2"> <i class="ri-contacts-book-3-line"></i></span><a href="{% url 'contact_list' %}">Contacts</a></div>
+        <div class="yellow"><span class="icon3"><i class="ri-phone-fill"></i></span><a href="{% url 'helpline' %}">Helpline</a></div>
+        <div class="lightgreen"><span class="icon4"><i class="ri-edit-line"></i></span><a href="{% url 'alert_setup' %}">Edit Message</a></div>
+    </div>
+
+     <div class="why-app">
+      <h3>Why RapidSOS?</h3>
+      <p>RapidSOS helps you alert your trusted contacts with your live location when every second matters.</p>
+    </div>
+
+    <div class="warning">⚠️ Use Emergency Mode only in real emergencies.</div>
+
+    <div class = "footer">
+        <h4> Made with ❤️ by <span>Beginners?</span> </h4>
+    </div>
+
+    
+</body>
+</html>

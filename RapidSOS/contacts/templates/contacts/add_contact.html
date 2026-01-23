@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Emergency Contact</title>
+    <link rel="icon" type="sos/jpeg" href="{% static 'sos.jpeg' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/add_contacts.css' %}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>➕ Add Emergency Contact</h1>
+
+    <form id="contactForm" method="POST">
+      {% csrf_token %}
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" required>
+
+      <label for="relation">Relation</label>
+      <input type="text" id="relation" name="relation" placeholder="Eg: Friend, Father" required>
+
+      <button type="submit">Save Contact</button>
+    </form>
+
+    <a href="{% url 'contact_list' %}" class="view-link">View Saved Contacts</a>
+  </div>
+
+</body>
+</html>

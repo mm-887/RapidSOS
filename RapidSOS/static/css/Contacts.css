@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.contact-card {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative; 
+}
+
+.contact-card h3 {
+  margin: 0 0 8px;
+  color: #ffcc80;
+}
+
+.contact-card p {
+  margin: 4px 0;
+}
+
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #b30000;
+}
+
+.no-contacts {
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 550px){
+  h1{
+    font-size: 7vw;
+    white-space: nowrap;
+  }
+  .no-contacts{
+    font-size: 5vw;
+  }
+}
