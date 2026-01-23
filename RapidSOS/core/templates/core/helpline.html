@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Helpline</title>
+    <link rel="icon" type="sos/jpeg" href="{% static 'sos.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/helpline.css' %}">
+</head>
+<body>
+    <div class="helpline-container">
+        <h2>Emergency Helpline</h2>
+        <div class="helpline-item">
+            <h4>Ambulance: 102</h4>
+            <a href="tel:102" class="call-button">Call</a>
+        </div>
+        <div class="helpline-item">
+            <h4>Gas leak: 1906</h4>
+            <a href="tel:1906" class="call-button">Call</a>
+        </div>
+        <div class="helpline-item">
+            <h4>Disaster Management: 1078</h4>
+            <a href="tel:1078" class="call-button">Call</a>
+        </div>
+        <div class="helpline-item">
+            <h4>Police: 100</h4>
+            <a href="tel:100" class="call-button">Call</a>
+        </div>
+        <div class="helpline-item">
+            <h4>Fire Management: 101</h4>
+            <a href="tel:101" class="call-button">Call</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{% url 'home' %}" style="color: #90caf9; text-decoration: none;">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

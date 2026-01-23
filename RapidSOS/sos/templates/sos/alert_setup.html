@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Alert Setup | SOS App</title>
+  <link rel="icon" type="sos/jpeg" href="{% static 'sos.jpeg' %}">
+  <link rel="stylesheet" href="{% static 'css/emergency_alert_setup.css' %}" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h3><a href="{% url 'home' %}">Home</a></h3>
+      <h3 class="app-title">Emergency SOS</h3>
+      <h3><a href="{% url 'contact_list' %}">Contacts</a></h3>
+    </nav>
+  </header>
+
+  <main>
+    {% csrf_token %}
+    <div class="emergency-setup">
+      <h2>Prepare your SOS in advance</h2>
+      <p>Configure emergency types and messages before you need them</p>
+    </div>
+
+    <div class="sos-box hidden" id="sosBox">
+      <h3>Ready to Send SOS</h3>
+      <p>Your emergency message will be sent to all saved contacts.</p>
+      <button id="sendSOSBtn" disabled>Send SOS</button>
+      <div class="countdown hidden" id="countdownText">
+        SOS will be sent in <span id="timer">5</span>s<br>
+        <button id="cancelBtn" onclick="cancelEmergency()" class="hidden">Cancel Emergency</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Emergency Profile</h1>
+      <p class="subtitle">Choose the type of emergency to send a quick SOS</p>
+      <div class="emergency-cards">
+        <div class="card" data-type="medical"><span>Medical</span></div>
+        <div class="card" data-type="accident"><span>Accident</span></div>
+        <div class="card" data-type="fire"><span>Fire</span></div>
+        <div class="card" data-type="threat"><span>Personal Threat</span></div>
+        <div class="card" data-type="custom"><span>Other</span></div>
+      </div>
+
+      <input type="text" id="customType" placeholder="Enter custom emergency type" class="hidden">
+      <label for="emergency-text">Emergency Message</label>
+      <textarea id="emergency-text" rows="5"></textarea>
+    </div>
+  </main>
+  {% csrf_token %}
+    <script>
+        const SOS_TRIGGER_URL = "{% url 'trigger_sos' %}";
+        const HOME_URL = "{% url 'home' %}";
+        const SETUP_URL = "{% url 'alert_setup' %}";
+    </script>
+  <script src="{% static 'js/Emergency Alert Setup.js' %}"></script>
+  
+</body>
+</html>
