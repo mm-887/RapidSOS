@@ -77,3 +77,9 @@ Users can choose the type of emergency:
 - Modern UI with icons
 
 - Works on desktop and mobile screens
+
+## 🛠️ Tech Stack
+**🖼️Frontend**
+
+![HTML 5](https://img.shields.io/badge/HTML%205%20-%20-%20orange%20-%20for-the-badge)
+
