@@ -16,12 +16,14 @@
       <h3><a href="{% url 'contact_list' %}">Contacts</a></h3>
     </nav>
   </header>
+
   <main>
     {% csrf_token %}
     <div class="emergency-setup">
       <h2>Prepare your SOS in advance</h2>
       <p>Configure emergency types and messages before you need them</p>
     </div>
+
     <div class="sos-box hidden" id="sosBox">
       <h3>Ready to Send SOS</h3>
       <p>Your emergency message will be sent to all saved contacts.</p>
@@ -31,6 +33,7 @@
         <button id="cancelBtn" onclick="cancelEmergency()" class="hidden">Cancel Emergency</button>
       </div>
     </div>
+
     <div class="container">
       <h1>Emergency Profile</h1>
       <p class="subtitle">Choose the type of emergency to send a quick SOS</p>
@@ -41,6 +44,7 @@
         <div class="card" data-type="threat"><span>Personal Threat</span></div>
         <div class="card" data-type="custom"><span>Other</span></div>
       </div>
+
       <input type="text" id="customType" placeholder="Enter custom emergency type" class="hidden">
       <label for="emergency-text">Emergency Message</label>
       <textarea id="emergency-text" rows="5"></textarea>
@@ -53,5 +57,6 @@
         const SETUP_URL = "{% url 'alert_setup' %}";
     </script>
   <script src="{% static 'js/Emergency Alert Setup.js' %}"></script>
+  
 </body>
 </html>

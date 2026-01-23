@@ -10,10 +10,7 @@ html,body {
   background: rgb(33,27,27);
   color: white;
 }
-a{
-  text-decoration: none;
-  color: rgb(15, 14, 14);
-}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -24,6 +21,7 @@ a{
   display: flex;
   justify-content: space-between;
 }
+
 .rapid-sos::after{
   content: "Rapid SOS";
   animation: textChange 15s ease-in-out infinite;
@@ -31,11 +29,9 @@ a{
 
 @keyframes textChange {
   0% {
-    
     opacity: 1;
     color:#b77ff4;
   }
-  
   25% {
     content: "Instant Emergency Help";
     opacity: 1;
@@ -60,6 +56,7 @@ a{
   white-space: nowrap;
   color: #FFFF00;
 }
+
 .header h1 .text{
   font-size: 28px;
   color:#bfbfbf
@@ -77,16 +74,8 @@ a{
   justify-content: space-around;
   gap: 7px;
   animation: coloranimate 3s infinite;
-  animation: slideDown 2s ease-in-out , towards 2s ease-in 2s;
-
+  animation:  slideDown 2s ease-in-out , towards 2s ease-in 2s;
 }
-
-.header .Emergency-box:hover{
-  cursor: pointer;
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(8, 64, 250, 0.8);
-}
-
 
 @keyframes coloranimate{
   from{
@@ -108,22 +97,31 @@ a{
   100%{ transform: scale(1); }
 }
 
+.header .Emergency-box:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(8, 64, 250, 0.8);
+}
+
 .Emergency{
   font-size: 36px;
   color: #FFFF00;
-
 }
+
 .Message{
   font-size: 18px;
   color: #FFFF00;
 }
 
 @media (max-width: 550px){
-  .header h1{
-    font-size: 18vw;
+  .header-top .rapid-sos{
+    display: none;
   }
-  .header h2{
-    font-size: 7vw;
+  .header h1{
+    font-size: 16vw;
+  }
+  .header h1 .text{
+    font-size: 6.5vw;
   }
   .Emergency{
     font-size: 10vw;
@@ -145,6 +143,12 @@ a{
   }
 }
 
+@media(max-width: 750px){
+  .header-top .rapid-sos{
+    display: none;
+  }
+}
+
 .how-sos-works{
   margin: 40px auto;
   padding: 30px 20px;
@@ -153,8 +157,6 @@ a{
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 1s forwards;
-  animation-delay:  stepDown 10s ease-in;
-  
 }
 
 @keyframes fadeInUp {
@@ -179,7 +181,6 @@ a{
   font-size: 20px;
   margin-bottom: 20px;
   margin-top: 18px;
-
 }
 
 .steps-container{
@@ -234,6 +235,11 @@ h3{
   color: rgb(146, 145, 145);
   font-size: 38px;
   margin-left:25px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(15, 14, 14);
 }
 
 .content{
@@ -363,11 +369,9 @@ h3{
   margin: 60px auto;
   padding: 30px 25px;
   text-align: center;
-
   background: #666565;
   backdrop-filter: blur(6px);
   border-radius: 16px;
-
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -383,11 +387,9 @@ h3{
   color: #e0e0e0;
   max-width: 700px;
   margin: 0 auto;
-  
   letter-spacing: 1px;
   line-height: 1.6;
 }
-
 
 .warning{
   text-align: center;
