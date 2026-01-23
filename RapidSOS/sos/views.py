@@ -33,11 +33,10 @@ def trigger_sos(request):
         for contact in user_contacts:
             print(f"Attempting to send to: {contact.phone}")
             try:
-                # Send the WhatsApp message
                 message = client.messages.create(
-                    from_='whatsapp:+14155238886', # Twilio Sandbox Number
+                    from_='whatsapp:+14155238886', 
                     body=full_msg,
-                    to=f'whatsapp:{contact.phone}' # Ensure phone includes country code
+                    to=f'whatsapp:{contact.phone}' 
                 )
                 print(f"Success! SID: {message.sid}")
                 print(f"Sent to {contact.phone}: {message.sid}")
