@@ -102,6 +102,7 @@ Users can choose the type of emergency:
 ![Home Page](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20074409.png)
 ![Alert Setup](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20075205.png)
 ![Add Contacts](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20075644.png)
+![Helpline](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20081534.png)
 
 ## 🔮 Future Improvements
 - Continuously share the user’s live location with emergency contacts until the alert is stopped.
