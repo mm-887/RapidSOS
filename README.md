@@ -98,6 +98,9 @@ Users can choose the type of emergency:
 | Anurag Arya |  | Integrated the whole project using **TwilioAPI** and create architecture of project |
 | Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
+## Screenshots
+
+
 
 
 
