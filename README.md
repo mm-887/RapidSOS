@@ -95,7 +95,7 @@ Users can choose the type of emergency:
 |-----|------|------------------|
 | Mitul Maurya | Backend Developer | Implemented sos logic and contacts management |
 | Jayash Mishra | Frontend Developer | Designed UI , countdown timer , emergency setup , created Readme |
-| Anurag Arya |  | Integrated the whole project using **TwilioAPI** and create architecture of project |
+| Anurag Arya | Backend Developer | Integrated the whole project using **TwilioAPI** and create architecture of project |
 | Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
 ## 📸 Screenshots
