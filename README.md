@@ -98,8 +98,9 @@ Users can choose the type of emergency:
 | Anurag Arya |  | Integrated the whole project using **TwilioAPI** and create architecture of project |
 | Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
-## Screenshots
+## 📸 Screenshots
 ![Home Page](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20074409.png)
+![Alert Setup]()
 
 
 
