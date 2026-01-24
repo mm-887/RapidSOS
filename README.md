@@ -89,7 +89,14 @@ Users can choose the type of emergency:
 
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 
-##📂Project Architecture
+## 👥 Team members & Responsibilities
+
+| Name | Role | Responsibilities |
+|-----|------|------------------|
+| Mitul Maurya | Backend Developer | Implemented sos logic and contacts management |
+| Jayash Mishra | Frontend Developer | Designed UI , countdown timer and emergency setup | created Readme |
+| Anurag Arya |  | Integrated the whole project using **TwilioAPI** and create architecture of project |
+| Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
 
 
