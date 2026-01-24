@@ -94,7 +94,7 @@ Users can choose the type of emergency:
 | Name | Role | Responsibilities |
 |-----|------|------------------|
 | Mitul Maurya | Backend Developer | Implemented sos logic and contacts management |
-| Jayash Mishra | Frontend Developer | Designed UI , countdown timer and emergency setup | created Readme |
+| Jayash Mishra | Frontend Developer | Designed UI , countdown timer , emergency setup , created Readme |
 | Anurag Arya |  | Integrated the whole project using **TwilioAPI** and create architecture of project |
 | Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
@@ -106,7 +106,8 @@ Users can choose the type of emergency:
 ## 🔮 Future Improvements
 - Continuously share the user’s live location with emergency contacts until the alert is stopped.
 - Users can trigger SOS, access saved contacts, and use predefined messages without internet access.
-- Allow users to activate SOS using voice commands like "Help me" or "SOS".
+- Allow users to activate SOS using voice commands like **Help me** or **SOS**.
+- **AI** can be integrated to automatically identify the type of emergency the user is facing, reducing response time and user effort during critical situations.
 
 
 
