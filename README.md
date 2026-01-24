@@ -100,7 +100,7 @@ Users can choose the type of emergency:
 
 ## 📸 Screenshots
 ![Home Page](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20074409.png)
-![Alert Setup]()
+![Alert Setup](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20075205.png)
 
 
 
