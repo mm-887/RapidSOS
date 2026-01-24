@@ -101,6 +101,12 @@ Users can choose the type of emergency:
 ## 📸 Screenshots
 ![Home Page](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20074409.png)
 ![Alert Setup](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20075205.png)
+![Add Contacts](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20075644.png)
+
+## 🔮 Future Improvements
+- Continuously share the user’s live location with emergency contacts until the alert is stopped.
+- Users can trigger SOS, access saved contacts, and use predefined messages without internet access.
+- Allow users to activate SOS using voice commands like "Help me" or "SOS".
 
 
 
