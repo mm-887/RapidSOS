@@ -99,6 +99,7 @@ Users can choose the type of emergency:
 | Adarsh Dhakad | Tester & Documentation | Tested features and handled repository management |
 
 ## Screenshots
+![Home Page](https://github.com/mm-887/RapidSOS/blob/main/Screenshot%202026-01-24%20074409.png)
 
 
 
